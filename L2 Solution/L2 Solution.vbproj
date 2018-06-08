@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEB760DC-B353-4BA0-8994-32423A288D86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>L2_Solution.My.MyApplication</StartupObject>
+    <RootNamespace>L2_Solution</RootNamespace>
+    <AssemblyName>L2 Solution</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>L2 Solution.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>L2 Solution.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCDuplicateTransactions.Designer.vb">
+      <DependentUpon>CCDuplicateTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCDuplicateTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCFraudulentCharges.Designer.vb">
+      <DependentUpon>CCFraudulentCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCFraudulentCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCGiftCardActivation.Designer.vb">
+      <DependentUpon>CCGiftCardActivation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCGiftCardActivation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCGiftCardMissingTransactions.Designer.vb">
+      <DependentUpon>CCGiftCardMissingTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCGiftCardMissingTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCGiftCardRedemption.Designer.vb">
+      <DependentUpon>CCGiftCardRedemption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCGiftCardRedemption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMachineDown.Designer.vb">
+      <DependentUpon>CCMachineDown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCMachineDown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMachineNotPairing.Designer.vb">
+      <DependentUpon>CCMachineNotPairing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCMachineNotPairing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCReportDiscrepancy.Designer.vb">
+      <DependentUpon>CCReportDiscrepancy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCReportDiscrepancy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCSystemConfig.Designer.vb">
+      <DependentUpon>CCSystemConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCSystemConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdLoggingIn.Designer.vb">
+      <DependentUpon>CustomerEdLoggingIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdLoggingIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdPasswords.Designer.vb">
+      <DependentUpon>CustomerEdPasswords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdPasswords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdSelfHelp.Designer.vb">
+      <DependentUpon>CustomerEdSelfHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdSelfHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdWalkthroughs.Designer.vb">
+      <DependentUpon>CustomerEdWalkthroughs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdWalkthroughs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database.Designer.vb">
+      <DependentUpon>Database.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardIssues.Designer.vb">
+      <DependentUpon>CardIssues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CardIssues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEd.Designer.vb">
+      <DependentUpon>CustomerEd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBBackup.Designer.vb">
+      <DependentUpon>DBBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBChangeError.Designer.vb">
+      <DependentUpon>DBChangeError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBChangeError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBCorrupt.Designer.vb">
+      <DependentUpon>DBCorrupt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBCorrupt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBMaintenance.Designer.vb">
+      <DependentUpon>DBMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBRecovery.Designer.vb">
+      <DependentUpon>DBRecovery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBRecovery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBSchema.Designer.vb">
+      <DependentUpon>DBSchema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBSchema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBSuspectMode.Designer.vb">
+      <DependentUpon>DBSuspectMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBSuspectMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBSyncing.Designer.vb">
+      <DependentUpon>DBSyncing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBSyncing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBTaxes.Designer.vb">
+      <DependentUpon>DBTaxes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBTaxes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBAllure.Designer.vb">
+      <DependentUpon>DMBAllure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBAllure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBBlankScreens.Designer.vb">
+      <DependentUpon>DMBBlankScreens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBBlankScreens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBHardware.Designer.vb">
+      <DependentUpon>DMBHardware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBHardware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBMissingImages.Designer.vb">
+      <DependentUpon>DMBMissingImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBMissingImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBPriceChangeRequests.Designer.vb">
+      <DependentUpon>DMBPriceChangeRequests.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBPriceChangeRequests.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBs.Designer.vb">
+      <DependentUpon>DMBs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdExplanationOfReportsSolution.Designer.vb">
+      <DependentUpon>CustomerEdExplanationOfReportsSolution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdExplanationOfReportsSolution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdGeneralQuestionsSolution.Designer.vb">
+      <DependentUpon>CustomerEdGeneralQuestionsSolution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdGeneralQuestionsSolution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBStaticUpdate.Designer.vb">
+      <DependentUpon>DMBStaticUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBStaticUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBWrongImages.Designer.vb">
+      <DependentUpon>DMBWrongImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBWrongImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hardware.Designer.vb">
+      <DependentUpon>Hardware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hardware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWCashDrawer.Designer.vb">
+      <DependentUpon>HWCashDrawer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWCashDrawer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWDMB.Designer.vb">
+      <DependentUpon>HWDMB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWDMB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWFPR.Designer.vb">
+      <DependentUpon>HWFPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWFPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWLCS.Designer.vb">
+      <DependentUpon>HWLCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWLCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWPizzaPortal.Designer.vb">
+      <DependentUpon>HWPizzaPortal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWPizzaPortal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWPrinters.Designer.vb">
+      <DependentUpon>HWPrinters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWPrinters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWRegistersCountersCCMachine.Designer.vb">
+      <DependentUpon>HWRegistersCountersCCMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWRegistersCountersCCMachine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWScanners.Designer.vb">
+      <DependentUpon>HWScanners.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWScanners.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWServer.Designer.vb">
+      <DependentUpon>HWServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HWSystemConfig.Designer.vb">
+      <DependentUpon>HWSystemConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HWSystemConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewStore.Designer.vb">
+      <DependentUpon>NewStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreNewStore.Designer.vb">
+      <DependentUpon>NewStoreNewStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreNewStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreDMB.Designer.vb">
+      <DependentUpon>NewStoreDMB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreDMB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreInitialSetup.Designer.vb">
+      <DependentUpon>NewStoreInitialSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreInitialSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreNewServer.Designer.vb">
+      <DependentUpon>NewStoreNewServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreNewServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreSoftwareInstall.Designer.vb">
+      <DependentUpon>NewStoreSoftwareInstall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreSoftwareInstall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreStoreValidation.Designer.vb">
+      <DependentUpon>NewStoreStoreValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreStoreValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreTransfer.Designer.vb">
+      <DependentUpon>NewStoreTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStoreUpdates.Designer.vb">
+      <DependentUpon>NewStoreUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewStoreUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCB.Designer.vb">
+      <DependentUpon>OCB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBBlueLine.Designer.vb">
+      <DependentUpon>OCBBlueLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBBlueLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBInventory.Designer.vb">
+      <DependentUpon>OCBInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBItemConfig.Designer.vb">
+      <DependentUpon>OCBItemConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBItemConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBNotOpeningLoading.Designer.vb">
+      <DependentUpon>OCBNotOpeningLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBNotOpeningLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBNotSaving.Designer.vb">
+      <DependentUpon>OCBNotSaving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBNotSaving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBPriceIssues.Designer.vb">
+      <DependentUpon>OCBPriceIssues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBPriceIssues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBRebuildNav.Designer.vb">
+      <DependentUpon>OCBRebuildNav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBRebuildNav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBReportIssues.Designer.vb">
+      <DependentUpon>OCBReportIssues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBReportIssues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBSecuritySettings.Designer.vb">
+      <DependentUpon>OCBSecuritySettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBSecuritySettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCBSyncIssues.Designer.vb">
+      <DependentUpon>OCBSyncIssues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OCBSyncIssues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Online.Designer.vb">
+      <DependentUpon>Online.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Online.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineButtonsMissing.Designer.vb">
+      <DependentUpon>OnlineButtonsMissing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineButtonsMissing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineEnableDisable.Designer.vb">
+      <DependentUpon>OnlineEnableDisable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineEnableDisable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineEPayValidation.Designer.vb">
+      <DependentUpon>OnlineEPayValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineEPayValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineItemAdjustment.Designer.vb">
+      <DependentUpon>OnlineItemAdjustment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineItemAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePizzaPortalLabels.Designer.vb">
+      <DependentUpon>OnlinePizzaPortalLabels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePizzaPortalLabels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePizzaPortalNotClearing.Designer.vb">
+      <DependentUpon>OnlinePizzaPortalNotClearing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePizzaPortalNotClearing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePizzaPortalValidation.Designer.vb">
+      <DependentUpon>OnlinePizzaPortalValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePizzaPortalValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePriceDiscrepancies.Designer.vb">
+      <DependentUpon>OnlinePriceDiscrepancies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePriceDiscrepancies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineTimeIssues.Designer.vb">
+      <DependentUpon>OnlineTimeIssues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineTimeIssues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsBlueLine.Designer.vb">
+      <DependentUpon>ReportsBlueLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsBlueLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsCOGS.Designer.vb">
+      <DependentUpon>ReportsCOGS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsCOGS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsDailySummary.Designer.vb">
+      <DependentUpon>ReportsDailySummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsDailySummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsIVR.Designer.vb">
+      <DependentUpon>ReportsIVR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsIVR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsKeyItem.Designer.vb">
+      <DependentUpon>ReportsKeyItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsKeyItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsOCB.Designer.vb">
+      <DependentUpon>ReportsOCB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsOCB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsVerifyDay.Designer.vb">
+      <DependentUpon>ReportsVerifyDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsVerifyDay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPage.Designer.vb">
+      <DependentUpon>SecondPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecondPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Software.Designer.vb">
+      <DependentUpon>Software.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Software.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWBlueLine.Designer.vb">
+      <DependentUpon>SWBlueLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWBlueLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWDBIssues.Designer.vb">
+      <DependentUpon>SWDBIssues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWDBIssues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWOnlineOrdering.Designer.vb">
+      <DependentUpon>SWOnlineOrdering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWOnlineOrdering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWPizzaPortal.Designer.vb">
+      <DependentUpon>SWPizzaPortal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWPizzaPortal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWPOSCV.Designer.vb">
+      <DependentUpon>SWPOSCV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWPOSCV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWTeamViewer.Designer.vb">
+      <DependentUpon>SWTeamViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWTeamViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWUpdates.Designer.vb">
+      <DependentUpon>SWUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CCDuplicateTransactions.resx">
+      <DependentUpon>CCDuplicateTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCFraudulentCharges.resx">
+      <DependentUpon>CCFraudulentCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCGiftCardActivation.resx">
+      <DependentUpon>CCGiftCardActivation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCGiftCardMissingTransactions.resx">
+      <DependentUpon>CCGiftCardMissingTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCGiftCardRedemption.resx">
+      <DependentUpon>CCGiftCardRedemption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMachineDown.resx">
+      <DependentUpon>CCMachineDown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMachineNotPairing.resx">
+      <DependentUpon>CCMachineNotPairing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCReportDiscrepancy.resx">
+      <DependentUpon>CCReportDiscrepancy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCSystemConfig.resx">
+      <DependentUpon>CCSystemConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdLoggingIn.resx">
+      <DependentUpon>CustomerEdLoggingIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdPasswords.resx">
+      <DependentUpon>CustomerEdPasswords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdSelfHelp.resx">
+      <DependentUpon>CustomerEdSelfHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdWalkthroughs.resx">
+      <DependentUpon>CustomerEdWalkthroughs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database.resx">
+      <DependentUpon>Database.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardIssues.resx">
+      <DependentUpon>CardIssues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEd.resx">
+      <DependentUpon>CustomerEd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBBackup.resx">
+      <DependentUpon>DBBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBChangeError.resx">
+      <DependentUpon>DBChangeError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCorrupt.resx">
+      <DependentUpon>DBCorrupt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBMaintenance.resx">
+      <DependentUpon>DBMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBRecovery.resx">
+      <DependentUpon>DBRecovery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBSchema.resx">
+      <DependentUpon>DBSchema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBSuspectMode.resx">
+      <DependentUpon>DBSuspectMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBSyncing.resx">
+      <DependentUpon>DBSyncing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBTaxes.resx">
+      <DependentUpon>DBTaxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBAllure.resx">
+      <DependentUpon>DMBAllure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBBlankScreens.resx">
+      <DependentUpon>DMBBlankScreens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBHardware.resx">
+      <DependentUpon>DMBHardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBMissingImages.resx">
+      <DependentUpon>DMBMissingImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBPriceChangeRequests.resx">
+      <DependentUpon>DMBPriceChangeRequests.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBs.resx">
+      <DependentUpon>DMBs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdExplanationOfReportsSolution.resx">
+      <DependentUpon>CustomerEdExplanationOfReportsSolution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdGeneralQuestionsSolution.resx">
+      <DependentUpon>CustomerEdGeneralQuestionsSolution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBStaticUpdate.resx">
+      <DependentUpon>DMBStaticUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBWrongImages.resx">
+      <DependentUpon>DMBWrongImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hardware.resx">
+      <DependentUpon>Hardware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWCashDrawer.resx">
+      <DependentUpon>HWCashDrawer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWDMB.resx">
+      <DependentUpon>HWDMB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWFPR.resx">
+      <DependentUpon>HWFPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWLCS.resx">
+      <DependentUpon>HWLCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWPizzaPortal.resx">
+      <DependentUpon>HWPizzaPortal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWPrinters.resx">
+      <DependentUpon>HWPrinters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWRegistersCountersCCMachine.resx">
+      <DependentUpon>HWRegistersCountersCCMachine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWScanners.resx">
+      <DependentUpon>HWScanners.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWServer.resx">
+      <DependentUpon>HWServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HWSystemConfig.resx">
+      <DependentUpon>HWSystemConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStore.resx">
+      <DependentUpon>NewStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreNewStore.resx">
+      <DependentUpon>NewStoreNewStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreDMB.resx">
+      <DependentUpon>NewStoreDMB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreInitialSetup.resx">
+      <DependentUpon>NewStoreInitialSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreNewServer.resx">
+      <DependentUpon>NewStoreNewServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreSoftwareInstall.resx">
+      <DependentUpon>NewStoreSoftwareInstall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreStoreValidation.resx">
+      <DependentUpon>NewStoreStoreValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreTransfer.resx">
+      <DependentUpon>NewStoreTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStoreUpdates.resx">
+      <DependentUpon>NewStoreUpdates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCB.resx">
+      <DependentUpon>OCB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBBlueLine.resx">
+      <DependentUpon>OCBBlueLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBInventory.resx">
+      <DependentUpon>OCBInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBItemConfig.resx">
+      <DependentUpon>OCBItemConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBNotOpeningLoading.resx">
+      <DependentUpon>OCBNotOpeningLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBNotSaving.resx">
+      <DependentUpon>OCBNotSaving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBPriceIssues.resx">
+      <DependentUpon>OCBPriceIssues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBRebuildNav.resx">
+      <DependentUpon>OCBRebuildNav.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBReportIssues.resx">
+      <DependentUpon>OCBReportIssues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBSecuritySettings.resx">
+      <DependentUpon>OCBSecuritySettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCBSyncIssues.resx">
+      <DependentUpon>OCBSyncIssues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Online.resx">
+      <DependentUpon>Online.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineButtonsMissing.resx">
+      <DependentUpon>OnlineButtonsMissing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineEnableDisable.resx">
+      <DependentUpon>OnlineEnableDisable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineEPayValidation.resx">
+      <DependentUpon>OnlineEPayValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineItemAdjustment.resx">
+      <DependentUpon>OnlineItemAdjustment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePizzaPortalLabels.resx">
+      <DependentUpon>OnlinePizzaPortalLabels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePizzaPortalNotClearing.resx">
+      <DependentUpon>OnlinePizzaPortalNotClearing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePizzaPortalValidation.resx">
+      <DependentUpon>OnlinePizzaPortalValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePriceDiscrepancies.resx">
+      <DependentUpon>OnlinePriceDiscrepancies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineTimeIssues.resx">
+      <DependentUpon>OnlineTimeIssues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsBlueLine.resx">
+      <DependentUpon>ReportsBlueLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsCOGS.resx">
+      <DependentUpon>ReportsCOGS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsDailySummary.resx">
+      <DependentUpon>ReportsDailySummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsIVR.resx">
+      <DependentUpon>ReportsIVR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsKeyItem.resx">
+      <DependentUpon>ReportsKeyItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsOCB.resx">
+      <DependentUpon>ReportsOCB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsVerifyDay.resx">
+      <DependentUpon>ReportsVerifyDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondPage.resx">
+      <DependentUpon>SecondPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Software.resx">
+      <DependentUpon>Software.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWBlueLine.resx">
+      <DependentUpon>SWBlueLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWDBIssues.resx">
+      <DependentUpon>SWDBIssues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWOnlineOrdering.resx">
+      <DependentUpon>SWOnlineOrdering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWPizzaPortal.resx">
+      <DependentUpon>SWPizzaPortal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWPOSCV.resx">
+      <DependentUpon>SWPOSCV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWTeamViewer.resx">
+      <DependentUpon>SWTeamViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWUpdates.resx">
+      <DependentUpon>SWUpdates.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
