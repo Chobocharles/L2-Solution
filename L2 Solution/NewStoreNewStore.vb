@@ -8,10 +8,6 @@
         Dim didntWorkMessage As String = "If this solution didn't work, please press 'review similar incidents'."
         Dim didntWorkMessageCaption As String = "Didn't Work"
         Dim didntWorkMessageButtons As MessageBoxButtons = MessageBoxButtons.OK
-        MessageBox.Show(didntWorkMessage, didntWorkMessageCaption, didntWorkMessageButtons)Dim didntWorkMessage As String = "If this solution didn't work, please press 'review similar incidents'."
-        Dim didntWorkMessageCaption As String = "Didn't Work"
-        Dim didntWorkMessageButtons As MessageBoxButtons = MessageBoxButtons.OK
-
         MessageBox.Show(didntWorkMessage, didntWorkMessageCaption, didntWorkMessageButtons)
     End Sub
 End Class

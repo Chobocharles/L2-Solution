@@ -10,4 +10,8 @@
         Dim didntWorkMessageButtons As MessageBoxButtons = MessageBoxButtons.OK
         MessageBox.Show(didntWorkMessage, didntWorkMessageCaption, didntWorkMessageButtons)
     End Sub
+
+    Private Sub btnSimilarIncidents_Click(sender As Object, e As EventArgs) Handles btnSimilarIncidents.Click
+
+    End Sub
 End Class
