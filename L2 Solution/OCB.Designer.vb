@@ -25,9 +25,9 @@ Partial Class OCB
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.grpButtons = New System.Windows.Forms.GroupBox()
-        Me.btnDailySummary = New System.Windows.Forms.Button()
+        Me.btnBlueLineErrors = New System.Windows.Forms.Button()
         Me.btnNotSaving = New System.Windows.Forms.Button()
-        Me.btnOtherReports = New System.Windows.Forms.Button()
+        Me.btnReportIssues = New System.Windows.Forms.Button()
         Me.btnItemConfiguration = New System.Windows.Forms.Button()
         Me.btnNotOpening = New System.Windows.Forms.Button()
         Me.btnRebuildingNavigation = New System.Windows.Forms.Button()
@@ -61,9 +61,9 @@ Partial Class OCB
         'grpButtons
         '
         Me.grpButtons.BackColor = System.Drawing.SystemColors.Control
-        Me.grpButtons.Controls.Add(Me.btnDailySummary)
+        Me.grpButtons.Controls.Add(Me.btnBlueLineErrors)
         Me.grpButtons.Controls.Add(Me.btnNotSaving)
-        Me.grpButtons.Controls.Add(Me.btnOtherReports)
+        Me.grpButtons.Controls.Add(Me.btnReportIssues)
         Me.grpButtons.Controls.Add(Me.btnItemConfiguration)
         Me.grpButtons.Controls.Add(Me.btnNotOpening)
         Me.grpButtons.Controls.Add(Me.btnRebuildingNavigation)
@@ -77,15 +77,15 @@ Partial Class OCB
         Me.grpButtons.TabIndex = 1
         Me.grpButtons.TabStop = False
         '
-        'btnDailySummary
+        'btnBlueLineErrors
         '
-        Me.btnDailySummary.Enabled = False
-        Me.btnDailySummary.Location = New System.Drawing.Point(5, 19)
-        Me.btnDailySummary.Name = "btnDailySummary"
-        Me.btnDailySummary.Size = New System.Drawing.Size(306, 23)
-        Me.btnDailySummary.TabIndex = 0
-        Me.btnDailySummary.Text = "&Blue Line Errors"
-        Me.btnDailySummary.UseVisualStyleBackColor = True
+        Me.btnBlueLineErrors.Enabled = False
+        Me.btnBlueLineErrors.Location = New System.Drawing.Point(5, 19)
+        Me.btnBlueLineErrors.Name = "btnBlueLineErrors"
+        Me.btnBlueLineErrors.Size = New System.Drawing.Size(306, 23)
+        Me.btnBlueLineErrors.TabIndex = 0
+        Me.btnBlueLineErrors.Text = "&Blue Line Errors"
+        Me.btnBlueLineErrors.UseVisualStyleBackColor = True
         '
         'btnNotSaving
         '
@@ -97,14 +97,14 @@ Partial Class OCB
         Me.btnNotSaving.Text = "Not &Saving Data"
         Me.btnNotSaving.UseVisualStyleBackColor = True
         '
-        'btnOtherReports
+        'btnReportIssues
         '
-        Me.btnOtherReports.Location = New System.Drawing.Point(5, 222)
-        Me.btnOtherReports.Name = "btnOtherReports"
-        Me.btnOtherReports.Size = New System.Drawing.Size(306, 23)
-        Me.btnOtherReports.TabIndex = 7
-        Me.btnOtherReports.Text = "Repor&t Issues"
-        Me.btnOtherReports.UseVisualStyleBackColor = True
+        Me.btnReportIssues.Location = New System.Drawing.Point(5, 222)
+        Me.btnReportIssues.Name = "btnReportIssues"
+        Me.btnReportIssues.Size = New System.Drawing.Size(306, 23)
+        Me.btnReportIssues.TabIndex = 7
+        Me.btnReportIssues.Text = "Repor&t Issues"
+        Me.btnReportIssues.UseVisualStyleBackColor = True
         '
         'btnItemConfiguration
         '
@@ -204,9 +204,9 @@ Partial Class OCB
     Friend WithEvents btnHome As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents grpButtons As GroupBox
-    Friend WithEvents btnDailySummary As Button
+    Friend WithEvents btnBlueLineErrors As Button
     Friend WithEvents btnNotSaving As Button
-    Friend WithEvents btnOtherReports As Button
+    Friend WithEvents btnReportIssues As Button
     Friend WithEvents btnItemConfiguration As Button
     Friend WithEvents btnNotOpening As Button
     Friend WithEvents btnRebuildingNavigation As Button

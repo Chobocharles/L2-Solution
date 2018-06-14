@@ -7,7 +7,7 @@
     Dim levelThreeNotificationCaption As String = "Escalation Required"
     Dim levelThreeNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         frmPageTwo.Show()
         Hide()
 

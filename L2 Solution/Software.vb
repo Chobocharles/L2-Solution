@@ -12,7 +12,7 @@
     Dim pizzaPortalNotificationCaption As String = "Pizza Portal Process"
     Dim pizzaPortalNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         frmPageTwo.Show()
         Hide()
 
@@ -33,7 +33,7 @@
         'Software.Close()
     End Sub
 
-    Private Sub btnDMBs_Click(sender As Object, e As EventArgs) Handles btnDMBs.Click
+    Private Sub btnDatabase_Click(sender As Object, e As EventArgs) Handles btnDMBs.Click
         Database.Show()
         Hide()
 
@@ -52,22 +52,22 @@
 
     End Sub
 
-    Private Sub btnNewStore_Click(sender As Object, e As EventArgs) Handles btnNewStore.Click
+    Private Sub btnBlueLine_Click(sender As Object, e As EventArgs) Handles btnNewStore.Click
         SWBlueLine.Show()
 
     End Sub
 
-    Private Sub btnCustomerEd_Click(sender As Object, e As EventArgs) Handles btnCustomerEd.Click
+    Private Sub btnPOS_Click(sender As Object, e As EventArgs) Handles btnCustomerEd.Click
         SWPOSCV.Show()
 
     End Sub
 
-    Private Sub btnCards_Click(sender As Object, e As EventArgs) Handles btnCards.Click
+    Private Sub btnTeamViewer_Click(sender As Object, e As EventArgs) Handles btnCards.Click
         SWTeamViewer.Show()
 
     End Sub
 
-    Private Sub btnCaesarVision_Click(sender As Object, e As EventArgs) Handles btnCaesarVision.Click
+    Private Sub btnVersionUpdates_Click(sender As Object, e As EventArgs) Handles btnCaesarVision.Click
         SWUpdates.Show()
 
     End Sub

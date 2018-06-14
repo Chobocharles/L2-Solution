@@ -25,16 +25,16 @@ Partial Class Online
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.grpButtons = New System.Windows.Forms.GroupBox()
+        Me.btnTimeZones = New System.Windows.Forms.Button()
+        Me.btnPriceDiscrepancies = New System.Windows.Forms.Button()
+        Me.btnPizzaPortalOrdersNotClearing = New System.Windows.Forms.Button()
+        Me.btnPizzaPortalLabels = New System.Windows.Forms.Button()
+        Me.btnMissingButtons = New System.Windows.Forms.Button()
         Me.btnEnableDisableOnlineOrdering = New System.Windows.Forms.Button()
         Me.btnEPayValidation = New System.Windows.Forms.Button()
         Me.btnPizzaPortalValidation = New System.Windows.Forms.Button()
         Me.btnMissingItems = New System.Windows.Forms.Button()
         Me.lblSelectIssue = New System.Windows.Forms.Label()
-        Me.btnMissingButtons = New System.Windows.Forms.Button()
-        Me.btnPizzaPortalLabels = New System.Windows.Forms.Button()
-        Me.btnPizzaPortalOrdersNotClearing = New System.Windows.Forms.Button()
-        Me.btnPriceDiscrepancies = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.grpButtons.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,7 +60,7 @@ Partial Class Online
         'grpButtons
         '
         Me.grpButtons.BackColor = System.Drawing.SystemColors.Control
-        Me.grpButtons.Controls.Add(Me.Button1)
+        Me.grpButtons.Controls.Add(Me.btnTimeZones)
         Me.grpButtons.Controls.Add(Me.btnPriceDiscrepancies)
         Me.grpButtons.Controls.Add(Me.btnPizzaPortalOrdersNotClearing)
         Me.grpButtons.Controls.Add(Me.btnPizzaPortalLabels)
@@ -74,6 +74,51 @@ Partial Class Online
         Me.grpButtons.Size = New System.Drawing.Size(317, 332)
         Me.grpButtons.TabIndex = 1
         Me.grpButtons.TabStop = False
+        '
+        'btnTimeZones
+        '
+        Me.btnTimeZones.Location = New System.Drawing.Point(5, 251)
+        Me.btnTimeZones.Name = "btnTimeZones"
+        Me.btnTimeZones.Size = New System.Drawing.Size(306, 23)
+        Me.btnTimeZones.TabIndex = 8
+        Me.btnTimeZones.Text = "&Time Issues"
+        Me.btnTimeZones.UseVisualStyleBackColor = True
+        '
+        'btnPriceDiscrepancies
+        '
+        Me.btnPriceDiscrepancies.Location = New System.Drawing.Point(5, 222)
+        Me.btnPriceDiscrepancies.Name = "btnPriceDiscrepancies"
+        Me.btnPriceDiscrepancies.Size = New System.Drawing.Size(306, 23)
+        Me.btnPriceDiscrepancies.TabIndex = 7
+        Me.btnPriceDiscrepancies.Text = "Pri&ce Discrepancies"
+        Me.btnPriceDiscrepancies.UseVisualStyleBackColor = True
+        '
+        'btnPizzaPortalOrdersNotClearing
+        '
+        Me.btnPizzaPortalOrdersNotClearing.Location = New System.Drawing.Point(5, 193)
+        Me.btnPizzaPortalOrdersNotClearing.Name = "btnPizzaPortalOrdersNotClearing"
+        Me.btnPizzaPortalOrdersNotClearing.Size = New System.Drawing.Size(306, 23)
+        Me.btnPizzaPortalOrdersNotClearing.TabIndex = 6
+        Me.btnPizzaPortalOrdersNotClearing.Text = "Pizza Portal O&rders Not Clearing"
+        Me.btnPizzaPortalOrdersNotClearing.UseVisualStyleBackColor = True
+        '
+        'btnPizzaPortalLabels
+        '
+        Me.btnPizzaPortalLabels.Location = New System.Drawing.Point(5, 164)
+        Me.btnPizzaPortalLabels.Name = "btnPizzaPortalLabels"
+        Me.btnPizzaPortalLabels.Size = New System.Drawing.Size(306, 23)
+        Me.btnPizzaPortalLabels.TabIndex = 5
+        Me.btnPizzaPortalLabels.Text = "Pizza Portal &Labels Not Scanning"
+        Me.btnPizzaPortalLabels.UseVisualStyleBackColor = True
+        '
+        'btnMissingButtons
+        '
+        Me.btnMissingButtons.Location = New System.Drawing.Point(5, 19)
+        Me.btnMissingButtons.Name = "btnMissingButtons"
+        Me.btnMissingButtons.Size = New System.Drawing.Size(306, 23)
+        Me.btnMissingButtons.TabIndex = 0
+        Me.btnMissingButtons.Text = "&Buttons Missing"
+        Me.btnMissingButtons.UseVisualStyleBackColor = True
         '
         'btnEnableDisableOnlineOrdering
         '
@@ -121,51 +166,6 @@ Partial Class Online
         Me.lblSelectIssue.Text = "Online/Mobile Orders"
         Me.lblSelectIssue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnMissingButtons
-        '
-        Me.btnMissingButtons.Location = New System.Drawing.Point(5, 19)
-        Me.btnMissingButtons.Name = "btnMissingButtons"
-        Me.btnMissingButtons.Size = New System.Drawing.Size(306, 23)
-        Me.btnMissingButtons.TabIndex = 0
-        Me.btnMissingButtons.Text = "&Buttons Missing"
-        Me.btnMissingButtons.UseVisualStyleBackColor = True
-        '
-        'btnPizzaPortalLabels
-        '
-        Me.btnPizzaPortalLabels.Location = New System.Drawing.Point(5, 164)
-        Me.btnPizzaPortalLabels.Name = "btnPizzaPortalLabels"
-        Me.btnPizzaPortalLabels.Size = New System.Drawing.Size(306, 23)
-        Me.btnPizzaPortalLabels.TabIndex = 5
-        Me.btnPizzaPortalLabels.Text = "Pizza Portal &Labels Not Scanning"
-        Me.btnPizzaPortalLabels.UseVisualStyleBackColor = True
-        '
-        'btnPizzaPortalOrdersNotClearing
-        '
-        Me.btnPizzaPortalOrdersNotClearing.Location = New System.Drawing.Point(5, 193)
-        Me.btnPizzaPortalOrdersNotClearing.Name = "btnPizzaPortalOrdersNotClearing"
-        Me.btnPizzaPortalOrdersNotClearing.Size = New System.Drawing.Size(306, 23)
-        Me.btnPizzaPortalOrdersNotClearing.TabIndex = 6
-        Me.btnPizzaPortalOrdersNotClearing.Text = "Pizza Portal O&rders Not Clearing"
-        Me.btnPizzaPortalOrdersNotClearing.UseVisualStyleBackColor = True
-        '
-        'btnPriceDiscrepancies
-        '
-        Me.btnPriceDiscrepancies.Location = New System.Drawing.Point(5, 222)
-        Me.btnPriceDiscrepancies.Name = "btnPriceDiscrepancies"
-        Me.btnPriceDiscrepancies.Size = New System.Drawing.Size(306, 23)
-        Me.btnPriceDiscrepancies.TabIndex = 7
-        Me.btnPriceDiscrepancies.Text = "Pri&ce Discrepancies"
-        Me.btnPriceDiscrepancies.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(5, 251)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(306, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "&Time Issues"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Online
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -199,5 +199,5 @@ Partial Class Online
     Friend WithEvents btnPriceDiscrepancies As Button
     Friend WithEvents btnPizzaPortalOrdersNotClearing As Button
     Friend WithEvents btnPizzaPortalLabels As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnTimeZones As Button
 End Class

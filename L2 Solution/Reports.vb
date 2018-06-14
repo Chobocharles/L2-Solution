@@ -9,7 +9,7 @@
     Dim levelThreeNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
 
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         frmPageTwo.Show()
         Hide()
 
@@ -30,31 +30,31 @@
         Software.Close()
     End Sub
 
-    Private Sub btnCards_Click(sender As Object, e As EventArgs) Handles btnOCB.Click
+    Private Sub btnOCBReport_Click(sender As Object, e As EventArgs) Handles btnOCB.Click
         'ReportsOCB.Show()
         MessageBox.Show(levelThreeNotification, levelThreeNotificationCaption, levelThreeNotificationButtons, MessageBoxIcon.Stop)
 
     End Sub
 
-    Private Sub btnDMBs_Click(sender As Object, e As EventArgs) Handles btnIVR.Click
+    Private Sub btnIVRReport_Click(sender As Object, e As EventArgs) Handles btnIVR.Click
         MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, levelTwoNotificationButtons, MessageBoxIcon.Warning)
         ReportsIVR.Show()
 
     End Sub
 
-    Private Sub btnCustomerEd_Click(sender As Object, e As EventArgs) Handles btnCOGS.Click
+    Private Sub btnCOGS_Click(sender As Object, e As EventArgs) Handles btnCOGS.Click
         MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, levelTwoNotificationButtons, MessageBoxIcon.Warning)
         ReportsCOGS.Show()
 
     End Sub
 
-    Private Sub btnHardware_Click(sender As Object, e As EventArgs) Handles btnKeyItem.Click
+    Private Sub btnKeyItemReport_Click(sender As Object, e As EventArgs) Handles btnKeyItem.Click
         MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, levelTwoNotificationButtons, MessageBoxIcon.Warning)
         ReportsKeyItem.Show()
 
     End Sub
 
-    Private Sub btnOCB_Click(sender As Object, e As EventArgs) Handles btnBlueLine.Click
+    Private Sub btnBlueLine_Click(sender As Object, e As EventArgs) Handles btnBlueLine.Click
         MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, levelTwoNotificationButtons, MessageBoxIcon.Warning)
         ReportsBlueLine.Show()
 

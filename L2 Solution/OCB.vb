@@ -6,7 +6,8 @@
     Dim levelThreeNotification As String = "This is a level 3 incident. Please assign a ticket to the CV Dev Team."
     Dim levelThreeNotificationCaption As String = "Escalation Required"
     Dim levelThreeNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         frmPageTwo.Show()
         Hide()
 
@@ -27,13 +28,13 @@
         Software.Close()
     End Sub
 
-    Private Sub btnOtherReports_Click(sender As Object, e As EventArgs) Handles btnOtherReports.Click
+    Private Sub btnOtherReports_Click(sender As Object, e As EventArgs) Handles btnReportIssues.Click
         Reports.Show()
         Hide()
 
     End Sub
 
-    Private Sub btnDailySummary_Click(sender As Object, e As EventArgs) Handles btnDailySummary.Click
+    Private Sub btnBlueLineIssues_Click(sender As Object, e As EventArgs) Handles btnBlueLineErrors.Click
         MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, levelTwoNotificationButtons, MessageBoxIcon.Warning)
         OCBBlueLine.Show()
 

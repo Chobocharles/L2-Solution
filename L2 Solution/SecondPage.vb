@@ -15,13 +15,13 @@
         Software.Close()
     End Sub
 
-    Private Sub btnCategoryThree_Click(sender As Object, e As EventArgs) Handles btnCustomerEd.Click
+    Private Sub btnCustomerEd_Click(sender As Object, e As EventArgs) Handles btnCustomerEd.Click
         CustomerEd.Show()
         Hide()
 
     End Sub
 
-    Private Sub btnCategoryOne_Click(sender As Object, e As EventArgs) Handles btnDatabase.Click
+    Private Sub btnDatabases_Click(sender As Object, e As EventArgs) Handles btnDatabase.Click
         Database.Show()
         Hide()
     End Sub
@@ -60,7 +60,7 @@
 
     End Sub
 
-    Private Sub btnPizzaPortal_Click(sender As Object, e As EventArgs) Handles btnReports.Click
+    Private Sub btnReports_Click(sender As Object, e As EventArgs) Handles btnReports.Click
         Reports.Show()
         Hide()
 
@@ -72,7 +72,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
         Dim helpMessage As String = "Any questions or suggestions on this application can be directed to: charles.napierala@lcecorp.com."
         Dim helpCaption As String = "Help"
         Dim helpButtons As MessageBoxButtons = MessageBoxButtons.OK

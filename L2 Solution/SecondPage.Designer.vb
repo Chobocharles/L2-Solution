@@ -35,7 +35,7 @@ Partial Class frmPageTwo
         Me.btnReports = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblSelectIssue = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnHelp = New System.Windows.Forms.Button()
         Me.grpButtons.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -168,14 +168,14 @@ Partial Class frmPageTwo
         Me.lblSelectIssue.Text = "Select an Issue"
         Me.lblSelectIssue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
+        'btnHelp
         '
-        Me.Button1.Location = New System.Drawing.Point(167, 398)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Hel&p"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnHelp.Location = New System.Drawing.Point(167, 398)
+        Me.btnHelp.Name = "btnHelp"
+        Me.btnHelp.Size = New System.Drawing.Size(75, 23)
+        Me.btnHelp.TabIndex = 2
+        Me.btnHelp.Text = "Hel&p"
+        Me.btnHelp.UseVisualStyleBackColor = True
         '
         'frmPageTwo
         '
@@ -184,7 +184,7 @@ Partial Class frmPageTwo
         Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(341, 433)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnHelp)
         Me.Controls.Add(Me.lblSelectIssue)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.grpButtons)
@@ -212,5 +212,5 @@ Partial Class frmPageTwo
     Friend WithEvents btnOnline As Button
     Friend WithEvents btnReports As Button
     Friend WithEvents lblSelectIssue As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnHelp As Button
 End Class

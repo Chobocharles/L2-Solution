@@ -10,7 +10,8 @@
     Dim pizzaPortalNotification As String = "All hardware issues related to Pizza Portal are sent to Apex for troubleshooting."
     Dim pizzaPortalNotificationCaption As String = "Pizza Portal Process"
     Dim pizzaPortalNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         frmPageTwo.Show()
         Hide()
 
@@ -83,7 +84,7 @@
 
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnTimeZones_Click(sender As Object, e As EventArgs) Handles btnTimeZones.Click
         MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, levelTwoNotificationButtons, MessageBoxIcon.Warning)
         OnlineTimeIssues.Show()
 
