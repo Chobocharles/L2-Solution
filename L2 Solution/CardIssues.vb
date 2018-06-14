@@ -8,7 +8,17 @@
     Dim levelThreeNotificationCaption As String = "Escalation Required"
     Dim levelThreeNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
 
+    Dim levelElevationResponse As String = "Does the customer have a discrepancy between reported amount and deposit amount?"
+    Dim levelElevationResponseCaption As String = "Report Discrepancy"
+    Dim levelElevationResponseButtons As MessageBoxButtons = MessageBoxButtons.YesNo
 
+    Dim fraudMessage As String = "Report and forward this incident to the loss prevention team."
+    Dim fraudAlert As String = "Alert!"
+    Dim fraudMessageButtons As MessageBoxButtons = MessageBoxButtons.OK
+
+    Dim giftTransactionMissing As String = "Identify if the gift card is third-party or LCE."
+    Dim giftTransactionPicture As String = "Obtain a picture of the gift card's front and back."
+    Dim giftTransactionMissingCaption As String = "Documentation"
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         frmPageTwo.Show()
@@ -50,9 +60,6 @@
     End Sub
 
     Private Sub btnReportDiscrepancy_Click(sender As Object, e As EventArgs) Handles btnReportDiscrepancy.Click
-        Dim levelElevationResponse As String = "Does the customer have a discrepancy between reported amount and deposit amount?"
-        Dim levelElevationResponseCaption As String = "Report Discrepancy"
-        Dim levelElevationResponseButtons As MessageBoxButtons = MessageBoxButtons.YesNo
         Dim response As String = MessageBox.Show(levelElevationResponse, levelElevationResponseCaption, levelElevationResponseButtons, MessageBoxIcon.Question)
         If response = vbNo Then
             MessageBox.Show(levelTwoNotification, levelTwoNotificationCaption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -72,9 +79,6 @@
     End Sub
 
     Private Sub btnFraud_Click(sender As Object, e As EventArgs) Handles btnFraud.Click
-        Dim fraudMessage As String = "Report and forward this incident to the loss prevention team."
-        Dim fraudAlert As String = "Alert!"
-        Dim fraudMessageButtons As MessageBoxButtons = MessageBoxButtons.OK
         MessageBox.Show(fraudMessage, fraudAlert, fraudMessageButtons, MessageBoxIcon.Stop)
     End Sub
 
@@ -91,9 +95,6 @@
     End Sub
 
     Private Sub btnGCTransactionsMissing_Click(sender As Object, e As EventArgs) Handles btnGCTransactionsMissing.Click
-        Dim giftTransactionMissing As String = "Identify if the gift card is third-party or LCE."
-        Dim giftTransactionPicture As String = "Obtain a picture of the gift card's front and back."
-        Dim giftTransactionMissingCaption As String = "Documentation"
         MessageBox.Show(giftTransactionMissing, giftTransactionMissingCaption, MessageBoxButtons.OK, MessageBoxIcon.Stop)
         MessageBox.Show(giftTransactionPicture, giftTransactionMissingCaption, MessageBoxButtons.OK, MessageBoxIcon.Stop)
         MessageBox.Show(levelThreeNotification, levelThreeNotificationCaption, levelThreeNotificationButtons, MessageBoxIcon.Information)

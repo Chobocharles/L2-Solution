@@ -1,4 +1,19 @@
 ﻿Public Class frmPageTwo
+    Dim levelTwoNotification As String = "This may be solved by Level 2."
+    Dim levelTwoNotificationCaption As String = "Level 2 Resolution"
+    Dim levelTwoNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
+
+    Dim levelThreeNotification As String = "This is a level 3 incident. Please assign a ticket to the CV Dev Team."
+    Dim levelThreeNotificationCaption As String = "Escalation Required"
+    Dim levelThreeNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
+
+    Dim pizzaPortalNotification As String = "All issues related to Pizza Portal, aside from validation, are sent to Apex for troubleshooting."
+    Dim pizzaPortalNotificationCaption As String = "Pizza Portal Process"
+    Dim pizzaPortalNotificationButtons As MessageBoxButtons = MessageBoxButtons.OK
+
+    Dim helpMessage As String = "Any questions or suggestions on this application can be directed to: charles.napierala@lcecorp.com."
+    Dim helpCaption As String = "Help"
+    Dim helpButtons As MessageBoxButtons = MessageBoxButtons.OK
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
@@ -73,9 +88,6 @@
     End Sub
 
     Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
-        Dim helpMessage As String = "Any questions or suggestions on this application can be directed to: charles.napierala@lcecorp.com."
-        Dim helpCaption As String = "Help"
-        Dim helpButtons As MessageBoxButtons = MessageBoxButtons.OK
         MessageBox.Show(helpMessage, helpCaption, helpButtons)
     End Sub
 End Class
